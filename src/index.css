@@ -14,4 +14,9 @@ body {
     --bg: #111;
     --text: #eee;
   }
+
+  .text-color {
+    --primary: #ffffff;
+    --secondary: #808080;
+  }
 }
