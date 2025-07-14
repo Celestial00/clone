@@ -5,18 +5,18 @@ body {
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@layer theme {
-  :root {
-    --bg: white;
-    --text: black;
-  }
-  .dark {
-    --bg: #0D0D0D;
-    --text: #eee;
-  }
+@theme {
+  /* dark mode  */
+  --bg: white;
+  --text: black;
 
-  .text-color {
-    --primary: #ffffff;
-    --secondary: #808080;
-  }
+  /* Light mode */
+
+  --bg: #0d0d0d;
+  --text: #eee;
+
+  /* for text */
+
+  --primary: #ffffff;
+  --secondary: #808080;
 }
