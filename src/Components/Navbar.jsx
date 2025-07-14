@@ -98,10 +98,17 @@ export default function Navbar() {
             </div>
 
             {dropDown ? (
-              <div className=" absolute top-16 left-98 w-35 h-35  rounded-sm bg-[#18181899] flex flex-col py-5 items-center gap-4 ">
-                <p className="  text-[#C5C5C5]">BookShelf</p>
-                <p className="  text-[#C5C5C5]">Tech Stack</p>
-                <p className="  text-[#C5C5C5]"> This Ui Kit</p>
+              <div className=" absolute top-16 left-98 w-35 h-35  rounded-sm bg-[#FFFFFF40] backdrop-blur-lg  dark:bg-[#18181899] flex flex-col py-5 items-center gap-4 ">
+                <p className="  dark:text-[#C5C5C5] text-[#181818] ">
+                  BookShelf
+                </p>
+                <p className="  dark:text-[#C5C5C5] text-[#181818] ">
+                  Tech Stack
+                </p>
+                <p className="  dark:text-[#C5C5C5] text-[#181818]">
+                  {" "}
+                  This Ui Kit
+                </p>
               </div>
             ) : (
               ""
