@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="relative w-full bg-white dark:bg-[#0d0d0d] ">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[140px] bg-gradient-to-l from-blue-500/40 via-purple-500/40 to-orange-500 blur-[124px]  z-0" />
 
-      <div className="relative z-10 max-w-[1900px] mx-auto px-4 py-10 flex flex-col-reverse lg:flex-row justify-between items-start gap-16">
+      <div className="relative z-10 max-w-[1500px] mx-auto px-4 py-10 flex flex-col-reverse lg:flex-row justify-between items-start gap-16">
         <div className="flex flex-col gap-6">
           <div>
             <svg

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import ColorfulBackground from "./TopBlur";
 
 export default function Navbar() {
   const [dropDown, setDropDown] = useState(false);
@@ -18,12 +19,17 @@ export default function Navbar() {
   }, [dark]);
 
   const ToggleDropDown = () => {
+    console.log("====================================");
+    console.log("asdas");
+    console.log("====================================");
+
     setDropDown((prev) => !prev);
   };
 
   return (
     <>
-      <div className=" hidden lg:flex rounded-sm  p-4 items-center justify-between bg-[#ffffff40] backdrop-blur-xl border-[1px] border-[#ffffff40]  dark:bg-[#18181D4D] dark:border-none w-full h-[60px] mt-10 ">
+      <ColorfulBackground />
+      <div className=" hidden lg:flex rounded-sm z-10 p-4 items-center justify-between bg-[#ffffff40] backdrop-blur-xl border-[1px] border-[#ffffff40]  dark:bg-[#18181D4D] dark:border-none w-full h-[60px] mt-[-40px] ">
         <div className="  flex py-2 px-2 gap-8">
           <div className="">
             <svg
@@ -254,7 +260,7 @@ export default function Navbar() {
 
       {/* On Mobile */}
 
-      <div className=" lg:hidden  w-full flex justify-center items-center  ">
+      <div className=" lg:hidden  w-full flex justify-center items-center mt-[-40px]  ">
         <div className="">
           <svg
             className="text-[#181818] dark:text-[#FFFFFF]"
