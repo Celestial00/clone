@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
+import ColorfulBackground from "../Components/TopBlur";
+
 
 export default function HomePage() {
   const [dark, setDark] = useState(() => {
@@ -17,10 +19,8 @@ export default function HomePage() {
 
   return (
     <>
-      <h1 className="  dark:text-white  ">HomePage </h1>
-      <button className=" cursor-pointer " onClick={() => setDark((prev) => !prev)}>
-        Dark mode
-      </button>
+      <ColorfulBackground />
+ 
     </>
   );
 }
