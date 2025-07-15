@@ -48,20 +48,46 @@ export default function AboutPage() {
         </div>
 
         {/* Right Profile Card */}
-        <div className="flex flex-col items-center md:items-start">
-          <div className="w-full max-w-[250px] mb-6 aspect-square bg-gray-200 dark:bg-gray-800 rounded-lg"></div>
-          <button className="px-5 py-2 rounded-md bg-black text-white hover:bg-gray-900 transition text-sm">
-            Get in touch
-          </button>
-        </div>
+        {/* Right section with image and button */}
+<div className="flex flex-col items-center justify-center gap-6 mt-6">
+  {/* Profile Image */}
+  <img
+    src="/dark.png" // Make sure this image is in your public folder
+    alt="Profile"
+    className="rounded-xl w-64 h-80 object-cover bg-black"
+  />
+
+  {/* Get in Touch Button */}
+  <button className="bg-black text-white px-6 py-2 rounded-md flex items-center gap-2 hover:opacity-80 transition">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.362 5.214l5.572 5.572a1.5 1.5 0 010 2.121l-5.572 5.572M4.5 12h16.379"
+      />
+    </svg>
+    Get in touch
+  </button>
+</div>
+
       </div>
 
       {/* Signature */}
-      <div className="mt-20 text-right">
-        <p className="text-3xl italic font-handwriting text-black dark:text-white">
-          Eihab Khan
-        </p>
+      <div className="mt-20 text-left">
+        <img
+          src="/Signature.png"
+          alt="Eihab Khan Signature"
+          className="h-24 inline-block"
+        />
       </div>
+
     </div>
   );
 }
