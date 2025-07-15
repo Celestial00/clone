@@ -53,10 +53,8 @@ export default function Navbar() {
             </svg>
           </div>
           <div className="flex  gap-8">
-            <Link to="/">
-              <p className="dark:text-[var(--secondary)]  text-[16px] ">
-                About{" "}
-              </p>
+            <Link to="/about">
+              <p className="dark:text-[var(--secondary)] text-[16px] hover:underline">About</p>
             </Link>
             <Link to="/">
               <p className="dark:text-[var(--secondary)] text-[16px] ">Work </p>
