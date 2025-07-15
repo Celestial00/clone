@@ -78,6 +78,7 @@ export default function Navbar() {
               {/*  */}
 
               <p className="dark:text-[var(--secondary)] text-[16px] ">More </p>
+
               <svg
                 className={`text-[#181818] dark:text-[#FFFFFF] ${
                   dropDown ? "" : "rotate-270"
@@ -85,16 +86,15 @@ export default function Navbar() {
                 width="21"
                 height="20"
                 viewBox="0 0 21 20"
-                fill="currentColor"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill="currentColor"
-                  d="M7.5332 8.4493C8.41825 9.66753 9.45577 10.7587 10.6183 11.6945C10.7643 11.812 10.9687 11.812 11.1148 11.6945C12.2773 10.7587 13.3148 9.66753 14.1999 8.4493"
-                  stroke="#C5C5C5"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  d="M7.53418 8.4493C8.41923 9.66753 9.45674 10.7587 10.6193 11.6945C10.7653 11.812 10.9697 11.812 11.1157 11.6945C12.2783 10.7587 13.3158 9.66753 14.2008 8.4493"
+                  stroke="currentColor"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>
