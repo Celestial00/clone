@@ -19,10 +19,6 @@ export default function Navbar() {
   }, [dark]);
 
   const ToggleDropDown = () => {
-    console.log("====================================");
-    console.log("asdas");
-    console.log("====================================");
-
     setDropDown((prev) => !prev);
   };
 
