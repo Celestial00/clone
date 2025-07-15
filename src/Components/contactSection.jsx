@@ -4,9 +4,11 @@ export default function contactSection() {
   return (
     <div className="w-full h-[300px] my-20 lg:flex-row flex-col flex justify-between items-center">
       <div className="">
-        <h1 className="text-white text-5xl font-bold">Let’s work together</h1>
+        <h1 className="dark:text-white text-5xl font-bold dark:text-[#181818]">
+          Let’s work together
+        </h1>
 
-        <p className="text-[#80808080] text-2xl mt-4">
+        <p className="dark:text-[#80808080] text-[#808080] text-2xl mt-4">
           Want to discuss an opportunity to create something <br /> great? I’m
           ready when you are.
         </p>
