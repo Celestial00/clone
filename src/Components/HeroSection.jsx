@@ -4,7 +4,7 @@ export default function HeroSection() {
   const [dark, setDark] = useState(localStorage.getItem("theme"));
 
   return (
-    <div className="   flex  my-50">
+    <div className="   flex lg:flex-row  md:flex-col-reverse my-50">
       <div className="z-10">
         <h1 className="text-5xl font-bold  text-[var(--secondary)] lg:hidden">
           Hi 👋
@@ -34,7 +34,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className=" hidden lg:block absolute left-315 top-60  ">
+      <div className=" hidden lg:block -ml-40   ">
         <img
           src={` ${dark === "dark" ? "dark.png" : "light.png"} `}
           className="w-150 h-150"

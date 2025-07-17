@@ -1,7 +1,7 @@
 export default function WorkCard({ title, desc, img, logo, type }) {
   return (
-    <div className="lg:px-10  px-7 py-4 lg:py-6 flex border border-[#EBEBEB] dark:border-[#383737] mt-10 bg-[#F6F6F6] dark:bg-[#181818] w-full h-[665px] rounded-4xl">
-      <div className="flex-1 p-8 flex  flex-col justify-between">
+    <div className="    flex border justify-between border-[#EBEBEB] dark:border-[#383737] mt-10 bg-[#F6F6F6] dark:bg-[#181818] w-full h-[665px] rounded-4xl">
+      <div className=" p-16  flex  flex-col justify-between">
         <div className=" flex flex-col gap-3">
           <img src={logo} alt="Logo" className="w-20 h-20 mb-4" />
 
@@ -34,8 +34,8 @@ export default function WorkCard({ title, desc, img, logo, type }) {
         </div>
       </div>
 
-      <div className=" hidden  flex-1 md:flex items-center justify-center">
-        <div className="w-[500px] h-[650px] overflow-hidden flex items-center justify-center">
+      <div className=" hidden   lg:flex items-center justify-center">
+        <div className="w-[500px] h-[650px] overflow-hidden flex items-center ">
           <img
             src={img}
             alt="Phone"
