@@ -7,7 +7,7 @@ import AboutPage from "./Pages/AboutPage";
 import Note from "./Pages/Note";
 import BookShelf from "./Pages/BookShelf";
 import TechStack from "./Pages/TechStack";
-import contactPage from "./Pages/ContactPage";
+import Notebook from "./Pages/NotebookPage";
 import ContactPage from "./Pages/ContactPage";
 
 export default function App() {
@@ -23,6 +23,7 @@ export default function App() {
             <Route path="/Tech" element={<TechStack />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/notebook" element={<Notebook />} />
           </Route>
         </Routes>
       </Router>
