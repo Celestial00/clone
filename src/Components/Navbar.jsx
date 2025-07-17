@@ -54,19 +54,21 @@ export default function Navbar() {
           </div>
           <div className="flex  gap-8">
             <Link to="/about">
-              <p className="dark:text-[var(--secondary)] text-[16px] hover:underline">About</p>
-            </Link>
-            <Link to="/">
-              <p className="dark:text-[var(--secondary)] text-[16px] ">Work </p>
-            </Link>
-            <Link to="/">
-              <p className="dark:text-[var(--secondary)] text-[16px] ">
-                Notebook{" "}
+              <p className="dark:text-[var(--secondary)] text-[16px] hover:underline">
+                About
               </p>
             </Link>
-            <Link to="/">
+            <Link to="/project">
+              <p className="dark:text-[var(--secondary)] text-[16px] ">Work</p>
+            </Link>
+            <Link to="/notebook">
               <p className="dark:text-[var(--secondary)] text-[16px] ">
-                Contact{" "}
+                Notebook
+              </p>
+            </Link>
+            <Link to="/contact">
+              <p className="dark:text-[var(--secondary)] text-[16px] ">
+                Contact
               </p>
             </Link>
             <div
