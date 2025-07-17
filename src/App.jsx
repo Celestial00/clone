@@ -3,6 +3,8 @@ import Mainlayout from "./Layout/Mainlayout";
 import HomePage from "./Pages/HomePage";
 import Project from "./Pages/Project";
 import Note from "./Pages/Note";
+import BookShelf from "./Pages/BookShelf";
+import TechStack from "./Pages/TechStack";
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/project" element={<Project />} />
             <Route path="/note" element={<Note />} />
+            <Route path="/books" element={<BookShelf />} />
+            <Route path="/Tech" element={<TechStack />} />
           </Route>
         </Routes>
       </Router>
