@@ -41,7 +41,7 @@ export default function TechStack() {
       className="
         min-h-screen
         px-4 sm:px-10 py-10
-        bg-white dark:bg-[#0f0f0f]
+        bg-white dark:bg-transparent
       "
     >
       <div className="max-w-5xl mx-auto">
