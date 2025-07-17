@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function ContactPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] pt-16 md:pt-24 pb-8 md:pb-10 px-2 bg-white dark:bg-[#0d0d0d]">
-      <div className="w-full max-w-3xl mx-auto">
+      <div className="w-full">
         <div className="pl-4 md:pl-8 lg:pl-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white text-left mb-2 mt-6 md:mt-8">Get in touch</h1>
           <p className="text-[#808080] text-base sm:text-lg md:text-xl text-left mb-6 md:mb-10">Let's build something awesome.</p>

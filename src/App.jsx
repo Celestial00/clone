@@ -7,6 +7,8 @@ import AboutPage from "./Pages/AboutPage";
 import Note from "./Pages/Note";
 import BookShelf from "./Pages/BookShelf";
 import TechStack from "./Pages/TechStack";
+import contactPage from "./Pages/ContactPage";
+import ContactPage from "./Pages/ContactPage";
 
 export default function App() {
   return (
@@ -20,6 +22,7 @@ export default function App() {
             <Route path="/books" element={<BookShelf />} />
             <Route path="/Tech" element={<TechStack />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Route>
         </Routes>
       </Router>
