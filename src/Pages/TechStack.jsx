@@ -1,4 +1,3 @@
-// src/pages/TechStack.jsx
 import TechCard from "../Components/TechCard.jsx";
 import { devAndDesign, apps, hardware, games } from "../data/TechStackData";
 
@@ -12,7 +11,18 @@ const Section = ({ title, data }) => (
     >
       {title}
     </h2>
-    <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
+    <div
+      className="
+        grid
+        grid-cols-1                 
+        sm:grid-cols-2              
+        md:grid-cols-3              
+        lg:grid-cols-4              
+        xl:grid-cols-4              
+        gap-4 sm:gap-6 md:gap-6
+        justify-items-center
+      "
+    >
       {data.map((item, index) => (
         <TechCard
           key={`${title}-${index}`}

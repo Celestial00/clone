@@ -18,26 +18,40 @@ export default function BookShelf() {
         <div className="w-full border-t border-gray-200 dark:border-gray-800 mb-8" />
 
         {/* Books Grid */}
-        <div className="flex flex-wrap gap-4 sm:gap-6 justify-center sm:justify-start">
+        <div
+          className="
+            grid
+            grid-cols-3
+            sm:grid-cols-4
+            md:grid-cols-5
+            lg:grid-cols-6
+            gap-4 sm:gap-6
+            justify-items-center
+          "
+        >
           {bookImages.map((src, i) => (
             <div
               key={`book-${i}`}
-              className="w-24 sm:w-28 md:w-32 lg:w-36 flex flex-col items-center group"
+              className="w-full max-w-[6rem] sm:max-w-[7rem] md:max-w-[8rem] lg:max-w-[9rem] group"
             >
               <div
                 className="
-                  w-full overflow-hidden rounded-xl shadow-lg
+                  relative
+                  w-full
+                  aspect-[2/3]
+                  overflow-hidden rounded-xl shadow-lg
                   border border-black/10 dark:border-white/20
                   bg-black/5 dark:bg-white/10
                   transition-transform duration-200
                   group-hover:scale-105
+                  flex items-center justify-center
                 "
               >
                 <img
                   src={src}
                   alt={`Book ${i + 1}`}
-                  className="w-full h-auto object-cover"
                   loading="lazy"
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>

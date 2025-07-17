@@ -1,23 +1,36 @@
-// src/Components/TechCard.jsx
 export default function TechCard({ name, iconSrc, label }) {
   return (
     <div
       className="
-        w-28 h-28 sm:w-32 sm:h-32
-        bg-white/70 dark:bg-white/10
-        backdrop-blur-md
-        border border-black/10 dark:border-white/20
+        /* sizing */
+        w-full max-w-[320px]
+        sm:w-52 sm:h-48
+        md:w-56 md:h-52
+
+        /* visual */
+        bg-gray-100 dark:bg-neutral-900
         rounded-2xl
-        flex flex-col items-center justify-center
-        p-3 shadow-lg
-        hover:scale-105 transition-transform duration-200
+        p-4
+        sm:pt-12 sm:px-5 sm:pb-6  
+        shadow-md mx-auto
+
+        /* hover */
+        transition-transform transition-shadow duration-200
+        hover:scale-105 hover:shadow-lg
+
+        /* layout: mobile row, sm+ column */
+        flex flex-row items-center gap-4
+        sm:flex-col sm:items-center sm:justify-center sm:gap-0
       "
     >
+      {/* Icon */}
       <div
         className="
-          w-12 h-12 sm:w-14 sm:h-14
-          bg-black/5 dark:bg-white/20
-          rounded-xl flex items-center justify-center mb-2 overflow-hidden
+          w-12 h-12
+          sm:w-16 sm:h-16
+          md:w-20 md:h-20
+          flex items-center justify-center
+          shrink-0
         "
       >
         {iconSrc && (
@@ -28,12 +41,44 @@ export default function TechCard({ name, iconSrc, label }) {
           />
         )}
       </div>
-      <div className="text-center text-[#181818] dark:text-white text-xs sm:text-sm">
-        <div className="font-semibold leading-tight">{name}</div>
+
+      {/* Text block wrapper */}
+      <div
+        className="
+          flex-1 w-full
+          sm:w-full sm:mt-8   
+          flex items-center justify-between gap-2
+          sm:flex-row
+        "
+      >
+        {/* Name */}
+        <span
+          className="
+            font-semibold
+            text-sm sm:text-base
+            text-[#181818] dark:text-white
+            text-left
+            break-words leading-tight
+            flex-1 min-w-0
+          "
+        >
+          {name}
+        </span>
+
+        {/* Label */}
         {label && (
-          <div className="text-[10px] text-[#5C5C5C] dark:text-gray-300 leading-tight">
+          <span
+            className="
+              px-2 py-0.5
+              text-[9px] sm:text-[10px]
+              text-gray-600 dark:text-gray-300
+              bg-gray-100 dark:bg-gray-700
+              rounded-full
+              shrink-0 whitespace-nowrap
+            "
+          >
             {label}
-          </div>
+          </span>
         )}
       </div>
     </div>
