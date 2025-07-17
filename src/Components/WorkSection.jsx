@@ -47,8 +47,9 @@ export default function WorkSection({ page }) {
       )}
 
       {page === true
-        ? Projects.map((pro) => (
+        ? Projects.map((pro, index) => (
             <WorkCard
+              key={index}
               title={pro.title}
               desc={pro.desc}
               img={pro.img}
@@ -56,8 +57,9 @@ export default function WorkSection({ page }) {
               type={pro.type}
             />
           ))
-        : Projects.slice(0, 3).map((pro) => (
+        : Projects.slice(0, 3).map((pro, index) => (
             <WorkCard
+              key={index}
               title={pro.title}
               desc={pro.desc}
               img={pro.img}

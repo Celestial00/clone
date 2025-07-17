@@ -1,4 +1,5 @@
 import React from "react";
+import BottomNavbar from "./bottomnavbar";
 
 export default function Footer() {
   return (
@@ -62,6 +63,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <BottomNavbar />
     </footer>
   );
 }
