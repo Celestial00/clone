@@ -9,7 +9,7 @@ export default function HeroSection() {
         <h1 className="text-5xl font-bold  text-[var(--secondary)] lg:hidden">
           Hi 👋
         </h1>
-        <h1 className=" text-5xl my-4 lg:my-0 lg:text-8xl  font-bold  text-[var(--secondary)]">
+        <h1 className=" text-5xl my-4 lg:my-0 lg:text-8xl   font-bold  text-[var(--secondary)]">
           I’m{" "}
           <span className="dark:text-white text-[#181818]"> Eihab Khan</span>
         </h1>

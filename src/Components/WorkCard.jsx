@@ -1,7 +1,7 @@
 export default function WorkCard({ title, desc, img, logo, type }) {
   return (
     <div className="    flex border justify-between border-[#EBEBEB] dark:border-[#383737] mt-10 bg-[#F6F6F6] dark:bg-[#181818] w-full h-[665px] rounded-4xl">
-      <div className=" p-16  flex  flex-col justify-between">
+      <div className=" lg:p-16 md:p-10 p-8   flex  flex-col justify-between">
         <div className=" flex flex-col gap-3">
           <img src={logo} alt="Logo" className="w-20 h-20 mb-4" />
 
