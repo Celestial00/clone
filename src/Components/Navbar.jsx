@@ -54,9 +54,7 @@ export default function Navbar() {
           </div>
           <div className="flex  gap-8">
             <Link to="/about">
-              <p className="dark:text-[var(--secondary)] text-[16px] hover:underline">
-                About
-              </p>
+              <p className="dark:text-[var(--secondary)] text-[16px] ">About</p>
             </Link>
             <Link to="/project">
               <p className="dark:text-[var(--secondary)] text-[16px] ">Work</p>

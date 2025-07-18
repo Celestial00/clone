@@ -1,5 +1,6 @@
 import React from "react";
 import BottomNavbar from "./bottomnavbar";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -45,10 +46,18 @@ export default function Footer() {
             <h1 className="dark:text-[var(--primary)] font-bold text-[#181818] text-xl mb-2">
               Links
             </h1>
-            <p className="text-[var(--secondary)] text-md">About</p>
-            <p className="text-[var(--secondary)] text-md">Work</p>
-            <p className="text-[var(--secondary)] text-md">Tech Stack</p>
-            <p className="text-[var(--secondary)] text-md">Contact</p>
+            <Link to="/about" className="text-[var(--secondary)] text-md">
+              About
+            </Link>
+            <Link to="project" className="text-[var(--secondary)] text-md">
+              Work
+            </Link>
+            <Link to="tech" className="text-[var(--secondary)] text-md">
+              Tech Stack
+            </Link>
+            <Link to="contact" className="text-[var(--secondary)] text-md">
+              Contact
+            </Link>
           </div>
 
           <div className="flex flex-col gap-4 mt-9 lg:mt-0">
