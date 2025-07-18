@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 export default function HeroSection() {
-  const [isDarkMode, setIsDarkMode] = useState(() =>
-    document.documentElement.classList.contains("dark")
-  );
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    // Observe changes to <html> class attribute
     const observer = new MutationObserver(() => {
       setIsDarkMode(document.documentElement.classList.contains("dark"));
     });
